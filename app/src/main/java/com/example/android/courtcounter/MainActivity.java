@@ -32,4 +32,14 @@ public class MainActivity extends AppCompatActivity {
         scoreA = scoreA + 3;
         displayForTeamA(scoreA);
     }
+
+    /**
+     * Increase the score for Team A by 2 points.
+     */
+    public void addTwoPointsForTeamA(View v){
+        TextView twoPoints = (TextView) findViewById(R.id.team_a_score);
+        int scoreA = Integer.parseInt(twoPoints.getText().toString());
+        scoreA = scoreA + 2;
+        displayForTeamA(scoreA);
+    }
 }
