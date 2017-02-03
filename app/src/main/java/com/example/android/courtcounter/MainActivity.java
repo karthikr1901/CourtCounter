@@ -42,4 +42,14 @@ public class MainActivity extends AppCompatActivity {
         scoreA = scoreA + 2;
         displayForTeamA(scoreA);
     }
+
+    /**
+     * Increase the score for Team A by 1 point.
+     */
+    public void addFreeThrowPointsForTeamA(View v){
+        TextView freePoints = (TextView) findViewById(R.id.team_a_score);
+        int scoreA = Integer.parseInt(freePoints.getText().toString());
+        scoreA = scoreA + 1;
+        displayForTeamA(scoreA);
+    }
 }
