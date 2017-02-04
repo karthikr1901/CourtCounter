@@ -60,4 +60,15 @@ public class MainActivity extends AppCompatActivity {
         TextView scoreView = (TextView) findViewById(R.id.team_b_score);
         scoreView.setText(String.valueOf(score));
     }
+
+    /**
+     * Increase the score for Team B by 3 points.
+     */
+    public void addThreePointsForTeamB(View v){
+        //TextView threePoints = (TextView) findViewById(R.id.team_a_score);
+        //int scoreA = Integer.parseInt(threePoints.getText().toString());
+        //scoreA = scoreA + 3;
+        scoreB = scoreB + 3;
+        displayForTeamB(scoreB);
+    }
 }
