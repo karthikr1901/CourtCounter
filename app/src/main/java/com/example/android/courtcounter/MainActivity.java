@@ -52,4 +52,12 @@ public class MainActivity extends AppCompatActivity {
         scoreA = scoreA + 1;
         displayForTeamA(scoreA);
     }
+
+    /**
+     * Displays the given score for Team B.
+     */
+    public void displayForTeamB(int score) {
+        TextView scoreView = (TextView) findViewById(R.id.team_b_score);
+        scoreView.setText(String.valueOf(score));
+    }
 }
