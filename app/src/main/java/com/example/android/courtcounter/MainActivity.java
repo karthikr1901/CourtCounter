@@ -82,4 +82,15 @@ public class MainActivity extends AppCompatActivity {
         scoreB = scoreB + 2;
         displayForTeamB(scoreB);
     }
+
+    /**
+     * Increase the score for Team B by 1 point.
+     */
+    public void addFreeThrowPointsForTeamB(View v){
+        //TextView freePoints = (TextView) findViewById(R.id.team_a_score);
+        //int scoreA = Integer.parseInt(freePoints.getText().toString());
+        //scoreA = scoreA + 1;
+        scoreB = scoreB + 1;
+        displayForTeamB(scoreB);
+    }
 }
