@@ -71,4 +71,15 @@ public class MainActivity extends AppCompatActivity {
         scoreB = scoreB + 3;
         displayForTeamB(scoreB);
     }
+
+    /**
+     * Increase the score for Team B by 2 points.
+     */
+    public void addTwoPointsForTeamB(View v){
+        //TextView twoPoints = (TextView) findViewById(R.id.team_a_score);
+        //int scoreA = Integer.parseInt(twoPoints.getText().toString());
+        //scoreA = scoreA + 2;
+        scoreB = scoreB + 2;
+        displayForTeamB(scoreB);
+    }
 }
